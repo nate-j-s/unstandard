@@ -1,0 +1,64 @@
+{
+    "name": "unstandard",
+    "description": "Unstandard is a premium Ghost theme that embraces minimalism, making it an ideal choice for photography sites or portfolios.",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=5.0.0"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Precode",
+        "email": "info@precode.net",
+        "url": "https://precode.net"
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme",
+        "portfolio-theme"
+    ],
+    "config": {
+        "posts_per_page": 6,
+        "image_sizes": {
+            "xs": {
+                "width": 150
+            },
+            "s": {
+                "width": 300
+            },
+            "m": {
+                "width": 720
+            },
+            "l": {
+                "width": 960
+            },
+            "xl": {
+                "width": 1200
+            },
+            "xxl": {
+                "width": 1170
+            }
+        },
+        "card_assets": true,
+        "custom": {
+            "welcome_text": {
+                "type": "text",
+                 "group": "homepage"
+            },
+            "footer_text": {
+                "type": "text"
+            },
+            "dark_mode": {
+                "type": "select",
+                "options": ["Default", "Dark Mode"],
+                "default": "Default"
+            },
+            "post_feed_layout": {
+                "type": "select",
+                "options": ["Two Column", "Three Column"],
+                "default": "Two Column",
+                "group": "homepage"
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{{!--
+Re-usable card for linking to posts
+--}}
+
+<article class="gh-card {{post_class}}">
+	<a href="{{url}}">
+		<div class="content-wrap">
+			{{#if feature_image}}
+			<div class="gh-feature-image card-image" style="background-image: url('{{img_url feature_image}}');"></div>
+			{{/if}}
+
+			<div class="content-entry">
+				<div class="title-wrap">
+					<h2 class="entry-title">{{{title}}}</h2>
+					<div class="content-date">
+						<span class="gh-card-meta entry-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM DD YYYY"}}</time></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+</article>

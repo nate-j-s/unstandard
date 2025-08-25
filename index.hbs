@@ -1,0 +1,26 @@
+{{!< default}}
+
+<div class="gh-page post-wrap">
+
+	<div class="wrap">
+        {{#unless @custom.welcome_text}}
+            <h2 class="welcome-message">Welcome to Unstandard. A minimal Ghost theme for photography and portfolio sites. <a href="https://precode.net/Unstandard">Download</a> it today.</h2>
+        {{else}}
+            <h2 class="welcome-message">{{@custom.welcome_text}}</h2>
+        {{/unless}}
+	</div>
+
+	<div class="gh-container site-main portfolio-wrap">
+
+		<div id="projects" class="project-wrapper">
+			{{#foreach posts}}
+				<div class="post-container">
+					{{> "card"}} {{!-- partials/card.hbs --}}
+				</div>
+			{{/foreach}}
+		</div>
+
+		{{pagination}}
+
+	</div>
+</div>
